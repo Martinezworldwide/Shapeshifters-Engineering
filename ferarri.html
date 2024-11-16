@@ -3,67 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zamorak Theme</title>
+    <title>Scuderia Engineering - Ferrari Affiliate</title>
     <style>
-        /* Zamorak Theme */
         body {
-            background-color: #1a0000; /* Dark red/black */
-            color: #FFD700; /* Gold accents */
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: #111;
+            color: #fff;
+        }
+
+        header {
+            background: #c40000;
+            color: white;
+            padding: 20px;
             text-align: center;
         }
-        header, footer {
-            background-color: #660000; /* Deep red */
-            padding: 20px;
-            width: 100%;
-        }
-        .content {
-            max-width: 800px;
-            padding: 20px;
-        }
-        h1 {
-            color: #B22222; /* Blood red */
+
+        header h1 {
             font-size: 2.5em;
+            margin: 0;
         }
-        p, a {
-            color: #FFD700;
+
+        nav {
+            background: black;
+            padding: 10px 0;
+            text-align: center;
         }
-        .button {
-            background-color: #B22222;
-            color: #FFD700;
-            padding: 10px 20px;
-            margin: 20px 0;
+
+        nav a {
+            color: white;
             text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
+            margin: 0 15px;
+            font-size: 1.2em;
         }
-        .button:hover {
-            background-color: #800000; /* Darker red */
+
+        nav a:hover {
+            color: #c40000;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+        }
+
+        .section h2 {
+            color: #c40000;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .products img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #c40000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #ff5733;
+        }
+
+        footer {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Zamorak's Realm</h1>
+        <h1>Scuderia Engineering</h1>
+        <p>Precision Engineering Meets Ferrari Excellence</p>
     </header>
-    <div class="content">
-        <h2>Welcome to the Zamorak Domain</h2>
-        <p>Embrace the power of chaos and strength.</p>
-        
-        <!-- Optional SoundCloud Embed or other Content -->
-        <iframe width="100%" height="166" scrolling="no" frameborder="no" 
-            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/artist_name/track_name&color=%23B22222&auto_play=false&show_artwork=true">
-        </iframe>
 
-        <a href="#" class="button">Join the Chaos</a>
+    <nav>
+        <a href="#engineering">Engineering Expertise</a>
+        <a href="#products">Ferrari Gear</a>
+        <a href="#design">Design Mastery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="engineering" class="section">
+            <h2>Engineering Expertise</h2>
+            <p>Discover Ferrari's groundbreaking innovations in aerodynamics, hybrid technology, and engine performance.</p>
+            <p><a href="https://www.ferrari.com/en-EN" target="_blank" class="btn">Learn More</a></p>
+        </section>
+
+        <section id="products" class="section">
+            <h2>Exclusive Ferrari Gear</h2>
+            <div class="products">
+                <img src="https://via.placeholder.com/400x250" alt="Ferrari Merchandise">
+                <p>Get access to Ferrari's latest merchandise and driving experiences through our affiliate program.</p>
+                <p><a href="https://store.ferrari.com/en-en/" target="_blank" class="btn">Shop Now</a></p>
+            </div>
+        </section>
+
+        <section id="design" class="section">
+            <h2>Design Mastery</h2>
+            <p>Explore Ferrari's signature blend of art and engineering. From aerodynamic curves to luxurious interiors, every Ferrari is a masterpiece.</p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:info@scuderiaengineering.com" style="color: #c40000;">info@scuderiaengineering.com</a></p>
+            <p>Phone: +1-800-FERRARI</p>
+        </section>
     </div>
+
     <footer>
-        <p>&copy; 2024 Zamorak's Realm</p>
+        <p>&copy; 2024 Scuderia Engineering. All rights reserved. Affiliate Partner of Ferrari.</p>
     </footer>
 </body>
 </html>
