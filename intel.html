@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel Product Solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #0071c5; /* Intel blue */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav {
+            background: #005a9e; /* Slightly darker blue */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin: 40px 0;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #0071c5;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-item {
+            flex: 1 1 calc(33% - 20px);
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item h3 {
+            color: #0071c5;
+            margin-bottom: 10px;
+        }
+
+        .product-item a {
+            text-decoration: none;
+            color: #005a9e;
+            font-weight: bold;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #0071c5;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .btn:hover {
+            background: #005a9e;
+        }
+
+        footer {
+            background: #0071c5;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Intel Product Solutions</h1>
+        <p>Empowering Technology with Advanced Sales Expertise</p>
+    </header>
+
+    <nav>
+        <a href="#intel-products">Intel Products</a>
+        <a href="#services">Sales Expertise</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <section id="intel-products" class="section">
+            <h2>Intel Products</h2>
+            <p>Intel offers a wide range of products to meet the needs of consumers, businesses, and enterprises. As a sales professional, I specialize in helping clients find the right Intel solutions to achieve their goals.</p>
+            <div class="products-grid">
+                <div class="product-item">
+                    <h3>Intel Core Processors</h3>
+                    <p>High-performance CPUs for gaming, productivity, and AI workloads.</p>
+                    <p><a href="https://www.intel.com/content/www/us/en/products/details/processors/core.html" target="_blank">Explore Intel Core</a></p>
+                </div>
+                <div class="product-item">
+                    <h3>Intel Xeon Processors</h3>
+                    <p>Enterprise-grade processors for servers and data centers.</p>
+                    <p><a href="https://www.intel.com/content/www/us/en/products/details/processors/xeon.html" target="_blank">Discover Xeon</a></p>
+                </div>
+                <div class="product-item">
+                    <h3>Intel Arc Graphics</h3>
+                    <p>Next-generation GPUs for gaming and creative professionals.</p>
+                    <p><a href="https://www.intel.com/content/www/us/en/architecture-and-technology/visual-technology/graphics.html" target="_blank">Learn About Arc Graphics</a></p>
+                </div>
+                <div class="product-item">
+                    <h3>Intel NUCs</h3>
+                    <p>Compact and versatile mini PCs for home and business use.</p>
+                    <p><a href="https://www.intel.com/content/www/us/en/products/details/nuc.html" target="_blank">Explore Intel NUCs</a></p>
+                </div>
+                <div class="product-item">
+                    <h3>Networking Solutions</h3>
+                    <p>High-speed Ethernet adapters and Wi-Fi solutions for seamless connectivity.</p>
+                    <p><a href="https://www.intel.com/content/www/us/en/products/details/network-io.html" target="_blank">View Networking Products</a></p>
+                </div>
+                <div class="product-item">
+                    <h3>Intel Optane Memory</h3>
+                    <p>Revolutionary memory technology for faster storage performance.</p>
+                    <p><a href="https://www.intel.com/content/www/us/en/products/details/memory-storage/optane.html" target="_blank">Learn About Optane</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <h2>Sales Expertise</h2>
+            <p>As an Intel sales professional, I provide tailored solutions to meet the unique needs of each client. Whether you're building a gaming rig, upgrading enterprise infrastructure, or deploying AI solutions, I can help you choose the right Intel products for success.</p>
+            <ul>
+                <li><strong>Client Consultation:</strong> Personalized advice to identify the best Intel solutions.</li>
+                <li><strong>Product Training:</strong> Helping clients maximize their investment in Intel technologies.</li>
+                <li><strong>Performance Optimization:</strong> Ensuring clients achieve optimal results with Intel products.</li>
+            </ul>
+            <p><a href="https://www.intel.com/" target="_blank" class="btn">Learn More About Intel</a></p>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:info@intelsalesprofessional.com" style="color: #0071c5;">info@intelsalesprofessional.com</a></p>
+            <p>Phone: +1-800-INTEL-SALES</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Intel Product Solutions. All rights reserved. Affiliate Partner of Intel.</p>
+    </footer>
+</body>
+</html>
