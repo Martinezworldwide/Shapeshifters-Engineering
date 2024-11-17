@@ -20,3 +20,9 @@ https://martinezworldwide.github.io/Shapeshifters-Engineering/ibm
 https://martinezworldwide.github.io/Shapeshifters-Engineering/yelp
 https://martinezworldwide.github.io/Shapeshifters-Engineering/rocketlawyer
 https://martinezworldwide.github.io/Shapeshifters-Engineering/amd
+https://martinezworldwide.github.io/Shapeshifters-Engineering/herbalife
+https://martinezworldwide.github.io/Shapeshifters-Engineering/amazon
+https://martinezworldwide.github.io/Shapeshifters-Engineering/kaspersky
+https://martinezworldwide.github.io/Shapeshifters-Engineering/intel
+https://martinezworldwide.github.io/Shapeshifters-Engineering/ebay
+https://martinezworldwide.github.io/Shapeshifters-Engineering/at&t
