@@ -12,3 +12,11 @@ https://martinezworldwide.github.io/Shapeshifters-Engineering/xometry
 https://martinezworldwide.github.io/Shapeshifters-Engineering/gaia
 https://martinezworldwide.github.io/Shapeshifters-Engineering/cvs
 https://martinezworldwide.github.io/Shapeshifters-Engineering/linkedin
+https://martinezworldwide.github.io/Shapeshifters-Engineering/brother
+https://martinezworldwide.github.io/Shapeshifters-Engineering/netgear
+https://martinezworldwide.github.io/Shapeshifters-Engineering/dell
+https://martinezworldwide.github.io/Shapeshifters-Engineering/etrade
+https://martinezworldwide.github.io/Shapeshifters-Engineering/ibm
+https://martinezworldwide.github.io/Shapeshifters-Engineering/yelp
+https://martinezworldwide.github.io/Shapeshifters-Engineering/rocketlawyer
+https://martinezworldwide.github.io/Shapeshifters-Engineering/amd
