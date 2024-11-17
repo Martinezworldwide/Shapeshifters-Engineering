@@ -1,82 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shapeshifters Engineering</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #f4f4f9;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        .content-container {
-            width: 90%;
-            max-width: 400px;
-            border: 2px solid #ccc;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-            margin: 20px 0;
-        }
-        iframe {
-            width: 100%;
-            height: 500px;
-            border: none;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapeshifters Engineering</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #1a1a2e, #16213e);
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #0f3460;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #e94560;
+      font-size: 2.5rem;
+    }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .button {
+      background: #e94560;
+      color: white;
+      border: none;
+      padding: 15px 25px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .modal-content {
+      background: #0f3460;
+      padding: 20px;
+      border-radius: 10px;
+      width: 90%;
+      max-width: 600px;
+      text-align: center;
+    }
+    .close {
+      background: #e94560;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    .facebook {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .facebook iframe {
+      border: none;
+      width: 100%;
+      max-width: 600px;
+      height: 400px;
+    }
+  </style>
 </head>
 <body>
-    <iframe src="https://sovrn.co/hnzhroz" style="border:10px #ffffff solid;" name="myiFrame" scrolling="yes" frameborder="1" marginheight="0px" marginwidth="0px" height="400px" width="600px" allowfullscreen></iframe>
 
-    <div class="article">
-         <h2>Liquid Web: An In-Depth Look at Premium Web Hosting</h2>
-        <p>
-            Liquid Web is a leading provider in the web hosting industry, renowned for its high-performance solutions and superior customer support. 
-            Whether you’re a small business owner, a growing e-commerce store, or an enterprise looking for scalable solutions, Liquid Web has you covered.
-        </p>
+<header>
+  <h1>Shapeshifters Engineering</h1>
+</header>
 
-        <h4>Why Choose Liquid Web?</h4>
+<div class="container">
+  <button class="button" data-modal="amazonModal">Amazon</button>
+  <button class="button" data-modal="amdModal">AMD</button>
+  <button class="button" data-modal="atntModal">AT&T</button>
+  <button class="button" data-modal="autodeskModal">Autodesk</button>
+  <button class="button" data-modal="brotherModal">Brother</button>
+  <button class="button" data-modal="ciscoModal">Cisco</button>
+  <button class="button" data-modal="cvsModal">CVS</button>
+  <button class="button" data-modal="dellModal">Dell</button>
+  <button class="button" data-modal="ebayModal">eBay</button>
+  <button class="button" data-modal="etradeModal">E*Trade</button>
+  <button class="button" data-modal="ferrariModal">Ferrari</button>
+  <button class="button" data-modal="gaiaModal">Gaia</button>
+  <button class="button" data-modal="herbalifeModal">Herbalife</button>
+  <button class="button" data-modal="ibmModal">IBM</button>
+  <button class="button" data-modal="intelModal">Intel</button>
+  <button class="button" data-modal="kasperskyModal">Kaspersky</button>
+  <button class="button" data-modal="linkedinModal">LinkedIn</button>
+  <button class="button" data-modal="liquidwebModal">Liquid Web</button>
+  <button class="button" data-modal="microsoftModal">Microsoft</button>
+  <button class="button" data-modal="nasaModal">NASA</button>
+  <button class="button" data-modal="netgearModal">Netgear</button>
+  <button class="button" data-modal="realmadridModal">Real Madrid</button>
+  <button class="button" data-modal="rocketlawyerModal">Rocket Lawyer</button>
+  <button class="button" data-modal="xometryModal">Xometry</button>
+  <button class="button" data-modal="yelpModal">Yelp</button>
+</div>
 
-        <p><strong>1. Reliability and Uptime</strong> - Liquid Web guarantees 100% network and power uptime, thanks to its fully redundant data centers. 
-            This level of reliability is essential for businesses that depend on consistent online performance.</p>
+<!-- Modal Templates -->
+<div id="amazonModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('amazonModal')">&times;</button>
+    <h2>Amazon</h2>
+    <p>Information about Amazon.</p>
+  </div>
+</div>
+<div id="amdModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('amdModal')">&times;</button>
+    <h2>AMD</h2>
+    <p>Information about AMD.</p>
+  </div>
+</div>
+<!-- Repeat for all other buttons -->
+<div id="autodeskModal" class="modal">
+  <div class="modal-content">
+    <button class="close" onclick="closeModal('autodeskModal')">&times;</button>
+    <h2>Autodesk</h2>
+    <p>Information about Autodesk.</p>
+  </div>
+</div>
+<!-- Continue this pattern for each .html file -->
 
-        <p><strong>2. High-Performance Solutions</strong> - Liquid Web’s servers are built to handle high-traffic loads and demanding applications. 
-            They offer a variety of hosting options, including:</p>
+<!-- Facebook Section -->
+<div class="facebook">
+  <h2>Follow Us on Facebook</h2>
+  <iframe src="https://www.facebook.com/plugins/page.php?href=YOUR_FACEBOOK_PAGE_URL&tabs=timeline&width=600&height=400&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true" scrolling="no"></iframe>
+</div>
 
-        <ul>
-            <li><strong>Managed WordPress Hosting</strong>: Optimized for speed, security, and reliability.</li>
-            <li><strong>Managed WooCommerce Hosting</strong>: Tailored for online stores, focusing on scalability and fast load times.</li>
-            <li><strong>Cloud VPS</strong> and <strong>Dedicated Servers</strong>: Ideal for resource-intensive websites and applications that need a robust hosting environment.</li>
-        </ul>
+<script>
+  // Modal functionality
+  document.querySelectorAll('.button').forEach(button => {
+    button.addEventListener('click', () => {
+      const modalId = button.getAttribute('data-modal');
+      document.getElementById(modalId).style.display = 'flex';
+    });
+  });
 
-        <p><strong>3. Outstanding Customer Support</strong> - Known as “The Most Helpful Humans in Hosting,” Liquid Web’s support team is available 24/7/365. 
-            Their expert technicians can assist with server issues, website optimization, and more, ensuring that your business remains online and functional.</p>
+  function closeModal(modalId) {
+    document.getElementById(modalId).style.display = 'none';
+  }
 
-        <p><strong>4. Security Features</strong> - Liquid Web offers a suite of security solutions, including DDoS protection, managed firewall, SSL certificates, and malware scanning. 
-            These features keep your data secure and protect your site from potential threats.</p>
+  // Close modal when clicking outside the content
+  window.addEventListener('click', event => {
+    if (event.target.classList.contains('modal')) {
+      event.target.style.display = 'none';
+    }
+  });
+</script>
 
-        <p><strong>5. Scalability</strong> - As your business grows, Liquid Web makes it easy to upgrade your hosting plan without any downtime. 
-            Their flexible hosting options allow you to expand your resources and capabilities seamlessly.</p>
-
-        <h4>Liquid Web Hosting Plans</h4>
-
-        <ul>
-            <li><strong>Managed WordPress Hosting</strong> - Built specifically for WordPress websites, offering automatic updates, daily backups, and built-in tools for speed optimization.</li>
-            <li><strong>Managed WooCommerce Hosting</strong> - Features like abandoned cart recovery, custom product pages, and more to boost e-commerce performance.</li>
-            <li><strong>Cloud VPS Hosting</strong> - Provides the ideal balance of affordability, performance, and control, making it great for scalable, cloud-based solutions.</li>
-            <li><strong>Dedicated Servers</strong> - Unmatched performance with full root access, perfect for resource-heavy sites requiring total control over the hosting environment.</li>
-        </ul>
-    </div>
-
-
-    <div class="linkedin-link">
-        <p>Check out more of my articles on <a href="https://www.linkedin.com/in/martinezworldwide/recent-activity/articles/" target="_blank">LinkedIn</a>.</p>
-    </div>
 </body>
 </html>
-
